@@ -1,0 +1,11 @@
+.footer {
+    text-align: center;
+    background: $primary_color;
+    color: $white;
+    p{
+        padding: 20px 0 8px;
+        a{
+            color: rgb(247, 247, 247);
+        }
+    }
+}
