@@ -1,3 +1,16 @@
 a.acf-button.button {
     margin-left: 9px;
 }
+
+.page-item.active .page-link {
+    background-color: $secandery_color;
+    border-color: $secandery_color;
+}
+
+.page-link {
+    color: $secandery_color;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0 rgba(25, 25, 25, 0.25);
+}

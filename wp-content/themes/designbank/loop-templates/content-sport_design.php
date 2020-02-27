@@ -6,33 +6,20 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-	<div class="entry-content">
-
-		<?php the_excerpt(); ?>
-
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'design_bank' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php design_bank_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
+<li class="list-inline-item">
+    <a href="<?php echo esc_url( get_permalink() ); ?>">
+        <div class="hover14 column">
+            <div>
+                <figure><?php 
+		$image = get_field('front_side');
+		if( !empty( $image ) ): ?>
+                    <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?></figure>
+                <span>#<?php the_title();?></span>
+            </div>
+		</div>
+    </a>
+</li>

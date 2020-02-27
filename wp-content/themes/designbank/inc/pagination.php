@@ -35,7 +35,7 @@ if ( ! function_exists( 'design_bank_pagination' ) ) {
 
 		<nav aria-label="<?php echo $args['screen_reader_text']; ?>">
 
-			<ul class="<?php echo esc_attr($class); ?>">
+			<ul class="<?php echo esc_attr($class); ?> justify-content-center">
 
 				<?php
 				foreach ( $links as $key => $link ) {

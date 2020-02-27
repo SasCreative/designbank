@@ -8,51 +8,41 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
 get_header();
-
-$container = get_theme_mod( 'design_bank_container_type' );
 ?>
+<div id="sport_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+				<h1>
+				<?php echo substr(get_the_archive_title(), strpos(get_the_archive_title(), ': ') + 1); ?>
+				</h1>
+              
 
-<div class="wrapper" id="archive-wrapper">
+                <?php if ( have_posts() ) : ?>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
-		<div class="row">
-
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
-			<main class="site-main" id="main">
-
-				<?php if ( have_posts() ) : ?>
-
-			
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
+                <?php /* Start the Loop */ ?>
+                <ul class="list-inline sport_tag">
+                    <?php while ( have_posts() ) : the_post(); ?>
                     <?php get_template_part( 'loop-templates/content', 'sport_design' ); ?>
+                    <?php endwhile; ?>
+                </ul>
+                <?php else : ?>
+                <?php get_template_part( 'loop-templates/content', 'none' ); ?>
+                <?php endif; ?>
 
-					<?php endwhile; ?>
+            </div>
 
-				<?php else : ?>
+        </div>
+        <div class="row ">
+            <div class="col-md-12">
+                <!-- The pagination component -->
+                <?php design_bank_pagination(); ?>
+            </div>
+        </div>
+    </div>
+</div>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-				<?php endif; ?>
-
-			</main><!-- #main -->
-
-			<!-- The pagination component -->
-			<?php design_bank_pagination(); ?>
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-		</div> <!-- .row -->
-
-	</div><!-- #content -->
-
-	</div><!-- #archive-wrapper -->
 
 <?php get_footer();

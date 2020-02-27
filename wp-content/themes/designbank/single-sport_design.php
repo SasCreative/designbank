@@ -6,47 +6,26 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+
 
 get_header();
-$container = get_theme_mod( 'design_bank_container_type' );
 ?>
+<div id="singel_design">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+			<?php while ( have_posts() ) : the_post(); ?>
+			<h1><?php the_archive_title(); ?></h1>
+ 
+            <?php get_template_part( 'loop-templates/content', 'single-sport_design' ); ?>
 
-<div class="wrapper" id="single-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+            <?php endwhile; // end of the loop. ?>
 
-		<div class="row">
+        </div>
+    </div>
+</div>
+</div>
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
-			<main class="site-main" id="main">
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'loop-templates/content', 'single-sport_design' ); ?>
-
-					<?php design_bank_post_nav(); ?>
-
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
-
-</div><!-- #single-wrapper -->
 
 <?php get_footer();
