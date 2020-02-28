@@ -25,7 +25,7 @@
 
         <!-- ******************* The Navbar Area ******************* -->
         <div id="wrapper-navbar">
-            <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
+            <nav id="main-nav" class="navbar navbar-expand-xl" aria-labelledby="main-nav-label">
                 <div class="container-fluid p-0">
                     <div class="nav_row">
                         <div class="nav_row_t">
@@ -53,7 +53,9 @@
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                                 aria-label="<?php esc_attr_e( 'Toggle navigation', 'design_bank' ); ?>">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars"></i>
+                                </span>
                             </button>
                         </div>
                         <div class="nav_row_b">
