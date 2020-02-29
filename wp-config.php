@@ -77,7 +77,9 @@ $table_prefix = 'ngjfg_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
+
 define( 'WP_DEBUG', true );
+define('FS_METHOD', 'direct');
 
 /* That's all, stop editing! Happy publishing. */
 
