@@ -77,6 +77,7 @@ function cptui_register_my_cpts_sport_design() {
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive" => true,
 		"show_in_menu" => true,
+		"supports" => array( 'title', 'editor', 'thumbnail' ),
 		"show_in_nav_menus" => true,
 		"delete_with_user" => false,
 		"exclude_from_search" => false,
@@ -143,3 +144,6 @@ function rm_post_view_count(){
 	}
 }
 add_action('wp_head', 'rm_post_view_count');
+
+
+

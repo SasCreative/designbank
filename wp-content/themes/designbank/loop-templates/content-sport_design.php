@@ -12,12 +12,11 @@
     <a href="<?php echo esc_url( get_permalink() ); ?>">
         <div class="hover14 column">
             <div>
-                <figure><?php 
-		$image = get_field('front_side');
-		if( !empty( $image ) ): ?>
-                    <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
-                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?></figure>
+                <figure>
+                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+                    <img class="img-fluid mx-auto d-block" src="<?php echo $url ?>"
+                        alt="" />
+                    </figure>
                 <span>#<?php the_title();?></span>
             </div>
 		</div>
