@@ -17,10 +17,7 @@ get_header();
 				<h1>
 				<?php echo substr(get_the_archive_title(), strpos(get_the_archive_title(), ': ') + 1); ?>
 				</h1>
-              
-
                 <?php if ( have_posts() ) : ?>
-
                 <?php /* Start the Loop */ ?>
                 <ul class="list-inline sport_tag">
                     <?php while ( have_posts() ) : the_post(); ?>
@@ -30,9 +27,7 @@ get_header();
                 <?php else : ?>
                 <?php get_template_part( 'loop-templates/content', 'none' ); ?>
                 <?php endif; ?>
-
             </div>
-
         </div>
         <div class="row ">
             <div class="col-md-12">
@@ -43,6 +38,4 @@ get_header();
     </div>
 </div>
 
-
-
-<?php get_footer();
+<?php get_footer(); 
