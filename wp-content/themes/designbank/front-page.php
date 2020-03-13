@@ -58,7 +58,7 @@
                     array(
                         'taxonomy' => 'sport',
                         'field' => 'slug',
-                        'terms' => array( 'basketball' )
+                        'terms' => array( 'athletics' )
                     ),
     
                 )
