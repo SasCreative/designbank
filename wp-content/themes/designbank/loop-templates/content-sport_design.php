@@ -11,7 +11,7 @@
 <li class="list-inline-item">
     <a href="<?php echo esc_url( get_permalink() ); ?>">
         <div class="hover14 column">
-            <div>
+        <div>
                 <figure>
                 <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
                     <img class="img-fluid mx-auto d-block" src="<?php echo $url ?>"

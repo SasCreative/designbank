@@ -19,6 +19,8 @@ $container = get_theme_mod( 'design_bank_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
+	
+
 		<div class="row">
 
 			<!-- Do the left sidebar check -->

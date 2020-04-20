@@ -14,3 +14,21 @@ a.acf-button.button {
 .page-link:focus {
     box-shadow: 0 0 0 0 rgba(25, 25, 25, 0.25);
 }
+
+.img-fluid {
+    width: 100%;
+}
+
+
+body {
+    background: #000;
+}
+
+.nk-layout-top-center {
+    position: relative;
+    top: 0px;
+    z-index: 4;
+    background: #000;
+    width: 100%;
+    padding: 15px 28%;
+}
