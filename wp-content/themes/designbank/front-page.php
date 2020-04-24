@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('sub'); ?>
 <div class="nk-layout">
     <div class="nk-slider" data-active-category="Athletics" data-transition-speed="500" data-transition-effect="fade"
         data-category-transition-speed="500" data-category-transition-effect="top" data-autoplay="false"
@@ -10,7 +10,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'athletics' )
                     ),
@@ -20,8 +20,12 @@
             $loop = new WP_Query($args); ?>
         <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="nk-slider-item" data-categories="Athletics" data-background-position="100% 100%">
-            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-            <img class="img-fluid mx-auto d-block" src="<?php echo $url ?>" alt="" />
+        <?php 
+		$image = get_field('index_side');
+		if( !empty( $image ) ): ?>
+                    <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
         </div>
         <?php endwhile; ?>
         <?php 
@@ -31,7 +35,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'basketball' )
                     ),
@@ -54,7 +58,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'football' )
                     ),
@@ -77,7 +81,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'netball' )
                     ),
@@ -99,7 +103,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'athletics' )
                     ),
@@ -122,7 +126,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'rugby-league' )
                     ),
@@ -145,7 +149,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'swimming' )
                     ),
@@ -168,7 +172,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'tag-touch' )
                     ),
@@ -191,7 +195,7 @@
                 'tax_query' => array(
                 'relation' => 'AND',
                     array(
-                        'taxonomy' => 'sport',
+                        'taxonomy' => 'sport_type',
                         'field' => 'slug',
                         'terms' => array( 'warm-up-top' )
                     ),
@@ -258,4 +262,4 @@
 </div>
 <div class="nk-main-bg"></div>
 <div class="nk-blog" id="nk-blog">
-    <?php get_footer(); ?>
+    <?php get_footer('sub'); ?>

@@ -15,18 +15,19 @@ get_header();
        
         <div class="row">
             <div class="col-md-12">
+        
 
-            <form class="mb-5 mt-5 ">
+            <!-- <form class="mb-5 mt-5 ">
             <div class="row">
                 <div class="col">
                 <label for="inputEmail4"> Select Sport</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-      <option>Sport 1</option>
-      <option>Sport 2</option>
-      <option>Sport 3</option>
-      <option>Sport 4</option>
-      <option>Sport 5</option>
-    </select>
+                    <option>Sport 1</option>
+                    <option>Sport 2</option>
+                    <option>Sport 3</option>
+                    <option>Sport 4</option>
+                    <option>Sport 5</option>
+                    </select>
                 </div>
                 <div class="col">
                 <label for="inputEmail4">Select Design Type</label>
@@ -43,7 +44,7 @@ get_header();
                 <button type="submit" class="btn btn-warning btn-block mt-4">Filter Design</button>
                 </div>
             </div>
-            </form>
+            </form> -->
                 <!-- <h1>
                     <?php echo substr(get_the_archive_title(), strpos(get_the_archive_title(), ': ') + 1); ?>
                 </h1> -->

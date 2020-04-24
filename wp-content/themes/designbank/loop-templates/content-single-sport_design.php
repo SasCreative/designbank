@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
     <header class="entry-header">
 
-        <?php the_title( '<h2 class="entry-title">Design Code - #', '</h2>' ); ?>
+        <?php the_title( '<h2 class="entry-title">Design Code - ', '</h2>' ); ?>
 
         <div class="entry-meta">
 
@@ -21,28 +21,14 @@ defined( 'ABSPATH' ) || exit;
 
     </header><!-- .entry-header -->
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="hover14 column">
-                <figure><?php 
-		$image = get_field('front_side');
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <?php 
+		$image = get_field('list_page');
 		if( !empty( $image ) ): ?>
                     <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?></figure>
-            </div>
-            <h3>Front Side</h3>
-        </div>
-        <div class="col-md-6">
-            <div class="hover14 column">
-                <figure><?php 
-		$image = get_field('back_side');
-		if( !empty( $image ) ): ?>
-                    <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
-                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?></figure>
-            </div>
-            <h3>Back Side</h3>
+                    <?php endif; ?>
         </div>
     </div>
     <hr>
@@ -55,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
 
     <footer class="entry-footer">
 
-        <h4> Views
+        <h4 class="text-center"> Views
             <?php global $post;
 				$visitor_count = get_post_meta( $post->ID, '_post_views_count', true);
 				if( $visitor_count == '' ){ $visitor_count = 0; }

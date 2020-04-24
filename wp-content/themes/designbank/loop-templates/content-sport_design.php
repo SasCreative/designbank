@@ -13,11 +13,13 @@
         <div class="hover14 column">
         <div>
                 <figure>
-                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-                    <img class="img-fluid mx-auto d-block" src="<?php echo $url ?>"
-                        alt="" />
+                <?php 
+		$image = get_field('list_page');
+		if( !empty( $image ) ): ?>
+                    <img class="img-fluid mx-auto d-block" src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
                     </figure>
-                <span>#<?php the_title();?></span>
             </div>
 		</div>
     </a>

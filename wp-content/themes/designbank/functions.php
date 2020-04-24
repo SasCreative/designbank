@@ -84,7 +84,7 @@ function cptui_register_my_cpts_sport_design() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "sport_design", "with_front" => true ],
+		"rewrite" => [ "slug" => "sport", "with_front" => true ],
 		"query_var" => true,
 		"menu_icon" => "dashicons-admin-appearance",
 	];
@@ -94,39 +94,6 @@ function cptui_register_my_cpts_sport_design() {
 
 add_action( 'init', 'cptui_register_my_cpts_sport_design' );
 
-
-function cptui_register_my_taxes() {
-
-	/**
-	 * Taxonomy: Sport Type.
-	 */
-
-	$labels = [
-		"name" => __( "Sport Type", "design_bank" ),
-		"singular_name" => __( "Sport", "design_bank" ),
-		"menu_name" => __( "Sport Type", "design_bank" ),
-	];
-
-	$args = [
-		"label" => __( "Sport Type", "design_bank" ),
-		"labels" => $labels,
-		"public" => true,
-		"publicly_queryable" => true,
-		"hierarchical" => true,
-		"show_ui" => true,
-		"show_in_menu" => true,
-		"show_in_nav_menus" => true,
-		"query_var" => true,
-		"rewrite" => [ 'slug' => 'sport', 'with_front' => true,  'hierarchical' => true, ],
-		"show_admin_column" => true,
-		"show_in_rest" => true,
-		"rest_base" => "sport",
-		"rest_controller_class" => "WP_REST_Terms_Controller",
-		"show_in_quick_edit" => true,
-		];
-	register_taxonomy( "sport", [ "sport_design" ], $args );
-}
-add_action( 'init', 'cptui_register_my_taxes' );
 
 
 
@@ -144,6 +111,8 @@ function rm_post_view_count(){
 	}
 }
 add_action('wp_head', 'rm_post_view_count');
+
+
 
 
 
