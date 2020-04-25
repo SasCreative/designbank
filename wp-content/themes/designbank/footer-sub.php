@@ -47,7 +47,7 @@
 
     <!-- Umbrella -->
     <script src="<?php echo get_template_directory_uri(); ?>/vender/umbrella/js/umbrella.js"></script>
-    <!-- <script src="assets/js/custom.js"></script> -->
+    <script src="<?php echo get_template_directory_uri(); ?>/vender/umbrella/js/custom.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/vender/umbrella/js/umbrella-init.js"></script>
     <!-- END: Scripts -->
 

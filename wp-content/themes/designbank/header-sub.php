@@ -20,19 +20,8 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vender/umbrella/css/bootstrap-custom.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vender/umbrella/css/umbrella.css">
-    <?php wp_head(); ?>
     <script src="<?php echo get_template_directory_uri(); ?>/vender/umbrella/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 
 
 <body <?php body_class(); ?> <?php design_bank_body_attributes(); ?>>
-
-
-            <!-- Top Center -->
-     <div class="nk-layout-top-center">
-            <nav class="nk-nav">
-                <ul class="nk-slider-categories">
-                    <!-- Here will be inserted available slider categories -->
-                </ul>
-            </nav>
-        </div>
