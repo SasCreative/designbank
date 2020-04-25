@@ -1,0 +1,22 @@
+2019-12-17T07:48:01+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\archive-product.php on line 170
+
+2019-12-17T09:24:24+00:00 CRITICAL Uncaught Error: Call to undefined function the_sidebar() in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\archive-product.php:37
+Stack trace:
+#0 C:\xampp\htdocs\blacksticks\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\blacksticks\wp-includes\template-loader.php(98): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\blacksticks\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\blacksticks\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\archive-product.php on line 37
+
+2019-12-17T09:35:19+00:00 CRITICAL Uncaught Error: Call to undefined function the_sidebar() in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\archive-product.php:37
+Stack trace:
+#0 C:\xampp\htdocs\blacksticks\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\blacksticks\wp-includes\template-loader.php(98): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\blacksticks\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\blacksticks\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\archive-product.php on line 37
+

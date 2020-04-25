@@ -1,0 +1,36 @@
+2020-01-31T05:07:01+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 130
+
+2020-01-31T05:07:47+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 130
+
+2020-01-31T05:07:48+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 130
+
+2020-01-31T05:07:52+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 130
+
+2020-01-31T05:31:21+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:26+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:27+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:28+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:29+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:30+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:30+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T05:31:34+00:00 CRITICAL Object of class WC_Shipping_Rate could not be converted to string in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T06:44:34+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T06:45:08+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T06:45:11+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T06:45:23+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 113
+
+2020-01-31T08:40:41+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 120
+
+2020-01-31T08:40:53+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 120
+

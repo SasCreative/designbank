@@ -1,0 +1,17 @@
+2019-12-16T06:20:41+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\inc\wp-admin.php:61
+Stack trace:
+#0 C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php(31): require_once()
+#1 C:\xampp\htdocs\blacksticks\wp-settings.php(497): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blacksticks\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\blacksticks\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\blacksticks\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blacksticks\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\inc\wp-admin.php on line 61
+
+2019-12-16T06:21:55+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\blacksticks/wp-content/themes/blacksticks/inc/wp-admin.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php on line 31
+
+2019-12-16T06:23:56+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\blacksticks/wp-content/themes/blacksticks/inc/wp-admin.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php on line 31
+
+2019-12-16T06:24:06+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\blacksticks/wp-content/themes/blacksticks/inc/wp-admin.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php on line 31
+

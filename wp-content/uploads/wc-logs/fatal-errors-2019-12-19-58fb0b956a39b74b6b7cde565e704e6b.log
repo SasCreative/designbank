@@ -1,0 +1,4 @@
+2019-12-19T11:19:20+00:00 CRITICAL Cannot redeclare woo_new_product_tab_content() (previously declared in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php:65) in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php on line 72
+
+2019-12-19T11:19:48+00:00 CRITICAL Cannot redeclare woo_new_product_tab_content() (previously declared in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php:65) in C:\xampp\htdocs\blacksticks\wp-content\themes\blacksticks\functions.php on line 72
+

@@ -1,0 +1,2 @@
+2020-01-30T11:56:49+00:00 CRITICAL Cannot redeclare hide_shipping_method_based_on_shipping_class() (previously declared in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php:84) in /Applications/MAMP/htdocs/blacksticks/wp-content/themes/blacksticks/functions.php on line 131
+
