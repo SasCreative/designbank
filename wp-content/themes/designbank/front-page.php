@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="_nK">
-    <title>Umbrella. | Studio</title>
+    <title>Design bank</title>
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/vender/umbrella/images/favicon.jpg">
 
     <!-- START: Styles -->
