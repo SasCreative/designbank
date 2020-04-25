@@ -63,7 +63,7 @@
 
             Additional Attributes Per Slide:
                 data-categories - list with categories
-                data-background-position - position for slide image. By default "50% 50%"
+                data-background-position - position for slide image. By default "40% 50%"
 
             Notes:
                 If you want add more then 1 category per slide, type it with | divider.
@@ -92,7 +92,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item active" data-categories="Athletics" data-background-position="50% 50%">
+        <div class="nk-slider-item active" data-categories="Athletics" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -118,7 +118,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Basketball" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Basketball" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -145,7 +145,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Football" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Football" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -173,7 +173,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Netball" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Netball" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -202,7 +202,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Rugby" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Rugby" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -229,7 +229,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Rugby League" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Rugby League" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -255,7 +255,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Swimming" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Swimming" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -283,7 +283,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Tag Touch" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Tag Touch" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
@@ -310,7 +310,7 @@
             );
             $loop = new WP_Query($args); ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="nk-slider-item" data-categories="Warm up top" data-background-position="50% 50%">
+        <div class="nk-slider-item" data-categories="Warm up top" data-background-position="40% 50%">
         <?php 
 		$image = get_field('index_side');
 		if( !empty( $image ) ): ?>
