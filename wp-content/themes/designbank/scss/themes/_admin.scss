@@ -20,7 +20,9 @@ a.acf-button.button {
 }
 
 body {
-    background: #a7a7a7;
+    background: rgb(0,0,0);
+background: linear-gradient(274deg, rgba(0,0,0,1) 0%, rgba(121,121,121,1) 48%, rgba(0,0,0,1) 100%);
+min-height: 100vh;
 }
 
 .nk-layout-top-center {

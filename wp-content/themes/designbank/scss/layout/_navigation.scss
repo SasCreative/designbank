@@ -1,6 +1,6 @@
-.nav_row_t {
-    background:$primary_color;
-}
+// .nav_row_t {
+//     background:$primary_color;
+// }
 
 .nav_row{
     width: 100%;
@@ -22,7 +22,6 @@ nav#main-nav{
 
 .navbar-brand {
     max-width: 180px;
-    pad: 20px;
 }
 
 a.nav-link {
@@ -39,9 +38,6 @@ a.nav-link {
     color: $primary_color;
 }
 
-.nav_row_b {
-    padding: 10px 0;
-}
 
 .nav > .active > a,
 .nav > .active > a:hover,

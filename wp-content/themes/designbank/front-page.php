@@ -363,7 +363,7 @@
         <div class="nk-layout-top-left">
 
             <a href="./" class="nk-nav-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/vender/umbrella/images/logo.png" alt="" width="133" data-logo-dark="<?php echo get_template_directory_uri(); ?>/vender/umbrella/images/logo-dark.png">
+                <img src="http://localhost:8888/designbank/wp-content/uploads/2020/02/sas-logo.png" alt="" width="133" data-logo-dark="<?php echo get_template_directory_uri(); ?>/vender/umbrella/images/logo-dark.png">
             </a>
 
 
@@ -381,7 +381,7 @@
         <nav class="nk-nav">
             <ul>
                 <li>
-                    <a href="http://designsbank.co.nz/sport/athletics/">View More</a>
+                    <a href="http://designsbank.co.nz/sport">View More Design</a>
                 </li>
             </ul>
         </nav>

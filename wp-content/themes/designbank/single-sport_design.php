@@ -15,7 +15,6 @@ get_header();
     <div class="row">
         <div class="col-md-12">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<h1><?php the_archive_title(); ?></h1>
  
             <?php get_template_part( 'loop-templates/content', 'single-sport_design' ); ?>
 
