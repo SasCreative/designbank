@@ -25,29 +25,30 @@ $container = get_theme_mod( 'design_bank_container_type' );
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
-			<main class="site-main" id="main">
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
+		<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+    <?php
+        if( $terms = get_terms( 'sport_type', 'orderby=name' ) ) : 
+            echo '<select name="categoryfilter"><option>Select category...</option>';
+            foreach ( $terms as $term ) :
+                echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; 
+            endforeach;
+            echo '</select>';
+        endif;
+    ?>
+	 <?php
+        if( $terms = get_terms( 'design_type', 'orderby=name' ) ) : 
+            echo '<select name="designfilter"><option>Select category...</option>';
+            foreach ( $terms as $term ) :
+                echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; 
+            endforeach;
+            echo '</select>';
+        endif;
+    ?>
+  
+    <button>Apply filters</button>
+    <input type="hidden" name="action" value="customfilter">
+</form>
+<div id="response"></div>
 		</div><!-- .row -->
 
 	</div><!-- #content -->

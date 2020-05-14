@@ -113,8 +113,46 @@ function rm_post_view_count(){
 add_action('wp_head', 'rm_post_view_count');
 
 
+function my_filters(){
+    $args = array(
+		'post_type' => 'sport_design',
+        'posts_per_page'=> 10,
+		'order' => $_POST['date'] ,
+		
+    );
 
-
-
+        if( isset( $_POST['categoryfilter'] ) )
+        $args['tax_query'] = array(
+			'relation' => 'AND',
+			array(
+			'taxonomy' => 'sport_type',
+			'terms' => $_POST['categoryfilter']
+			),
+			array(
+			'taxonomy' => 'design_type',
+			'terms' => $_POST['designfilter'],
+			)
+        );
+		// design_type
+    $query = new WP_Query( $args );
+  
+    if( $query->have_posts() ) :
+		while( $query->have_posts() ): $query->the_post();
+		?>
+		<?php get_template_part( 'loop-templates/content', 'single-sport_design' ); ?>
+		 <?php  
+		
+        endwhile;
+        wp_reset_postdata();
+    else :
+        echo 'No posts found';
+	endif;
+	
+    die();
+}
+  
+  
+add_action('wp_ajax_customfilter', 'my_filters'); 
+add_action('wp_ajax_nopriv_customfilter', 'my_filters');
 
 
